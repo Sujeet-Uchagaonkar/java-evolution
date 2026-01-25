@@ -1,10 +1,14 @@
 # Java Evolution Features POC
 
-Java 8 : Lambada, Stream API, Functional Interface
+**Java 8** : Lambada expression, Stream API, Functional interface, Optional class, New Date& Time package,
 
-Java 11 : 
+**Java 11** : Web client
 
-Java 17 :
+**Java 14** : Records
 
-Java 21 :
+**Java 17** : Sealed classes, Hidden classes
+
+**Java 20** : Pattern matching for `switch`
+
+**Java 21** : Virtual threads
 
