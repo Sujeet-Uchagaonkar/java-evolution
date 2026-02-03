@@ -6,7 +6,9 @@ import com.evolution.java.v8.interfaces.AddIntInterface;
 import com.evolution.java.v8.interfaces.CheckDuplicateEmpInterface;
 import com.evolution.java.v8.interfaces.EmpAggregateInteface;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class LambadaDemo {
@@ -21,19 +23,6 @@ public class LambadaDemo {
 		intList.addAll(Arrays.asList(15, 85, 66, 17, 11, 11));
 		intList.forEach((i) -> System.out.println("List of integers: "+i));
 		
-		List<String> names = new ArrayList<>();
-		names = Arrays.asList("ab", "bc", "cd");
-		names.forEach(name -> {
-			System.out.println("List of names: "+name);
-		});
-		
-		Set<Integer> intSet = new HashSet<>(intList);
-		intSet.forEach(intS -> System.out.println("Set of integers: "+intS));
-		
-
-		
-		
-		
 		
 		
 		// Lambada for complex object for each loop 
@@ -44,14 +33,19 @@ public class LambadaDemo {
 			System.out.println(emp.getEmpId() + " | " + emp.getEmpName());
 		});
 
+
+
 		// Lambada with functional interface for each loop 
 		EmpAggregateInteface empAggregateInteface = (empNm1, empNm2) -> (empNm1 + empNm2);
 		System.out.println("Employee Aggregated Names: "
 				+ empAggregateInteface.aggregateEmps(emp1.getEmpName(), emp2.getEmpName()));
 
 		CheckDuplicateEmpInterface checkDuplicateEmpInterface = (checkEmp1,
-																 checkEmp2) -> ((checkEmp1.getEmpId() == checkEmp2.getEmpId() ? Boolean.TRUE : Boolean.FALSE));
+																 checkEmp2) -> ((checkEmp1.getEmpId().equals(checkEmp2.getEmpId()) ? Boolean.TRUE : Boolean.FALSE));
 		System.out.println("Are those employees duplicate: " + checkDuplicateEmpInterface.isDuplicateEmp(emp1, emp2));
+
+
+
 
 		// Lambada for each loop with logic
 		List<String> empWithAstartName = new ArrayList<>();

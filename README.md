@@ -1,6 +1,6 @@
 # Java Evolution Features POC
 
-**Java 8** : Lambada expression, Stream API, Functional interface, Optional class, New Date& Time package,
+**Java 8** : Lambada expression, Functional interface, Default Methods, Optional class, New Date & Time package, Stream API,
 
 **Java 11** : Web client
 

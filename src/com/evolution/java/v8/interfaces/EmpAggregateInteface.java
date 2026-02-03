@@ -4,4 +4,5 @@ package com.evolution.java.v8.interfaces;
 public interface EmpAggregateInteface {
 
 	String aggregateEmps(String name1, String name2);
+
 }
